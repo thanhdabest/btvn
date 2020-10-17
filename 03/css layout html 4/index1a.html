@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        body{
+            font-size: 16px;
+        }
+
+        /*end css chung*/
+
+        .site-wrap{
+            width: 100%;
+        }
+
+        .header{
+            height: 250px;
+            background-color: gray;
+            color: white;
+            padding: 20px; 
+            box-sizing: border-box; 
+        }
+
+        /*end css header*/
+
+        .nav ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background-color: yellowgreen;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+
+        .nav ul > li {
+            float: left;
+            width: 150px;
+            padding: 10px 0;
+            background-color: yellowgreen;
+           
+        }
+
+        .nav ul > li > a{
+            text-decoration: none;
+            color: aqua;
+        }
+
+        
+        .nav ul > li > a:hover{
+            color: orange;
+        }
+
+        /* end css navigation*/
+
+        .content{
+            width: 100%;
+        }
+
+        .sidebar-left{
+            width: 25%;
+            background-color: grey;
+            color: white;
+            height: 750px;
+            float: left;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .sidebar-right{
+            width: 25%;
+            background-color: grey;
+            color: white;
+            height: 750px;
+            float:right;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .main-content{
+            width: 50%;
+            background-color: bisque;
+            height: 750px;
+            float: left;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /*end css cho content*/
+
+        .footer{
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            height: 250px;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="site-wrap">
+
+        <div class="header">
+            <h1>Header cua trang web</h1>
+        </div> <!--en .header-->
+
+        <div class="nav">
+            <ul class="clearfix"> 
+                <li><a href="">Trang chu</a></li>
+                <li><a href="">Gioi thieu</a></li>
+                <li><a href="">San pham</a></li>
+                <li><a href="">Lien he</a></li>
+            </ul>
+        </div> <!--end .nav-->
+
+        <div class="content clearfix">
+            <div class="sidebar sidebar-left">
+                <h4>Sidebar-left</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error molestiae velit, magnam et, rem dolores, ab totam perferendis rerum tempora perspiciatis illum hic. Amet esse nostrum, nihil maiores earum itaque?</p>
+            </div> <!--end .sidebar-left-->
+
+            <div class="main-content">
+                <h2>Noi dung chinh cua trang web</h2>
+                <div>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime maiores laboriosam rerum dignissimos voluptate expedita magni hic ipsum eius sequi, voluptates error ipsam nisi iure, doloremque nam. Magnam, maxime deserunt.
+                    Ipsam at sunt incidunt accusamus fugiat ut earum voluptatum ea quidem, expedita unde laudantium, molestiae facilis! Ad, explicabo repudiandae sequi qui totam at eius hic quisquam odit itaque placeat adipisci.
+                    Temporibus rem quas eius eligendi harum totam ipsam dicta sit est suscipit consectetur placeat tenetur architecto illum iure, ipsum qui, officiis reiciendis quaerat nesciunt sequi dignissimos saepe. Eligendi, omnis ratione.
+                </div>
+            </div> <!--end .main-content-->
+
+            <div class="sidebar sidebar-right">
+                <h4>Sidebar-left</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error molestiae velit, magnam et, rem dolores, ab totam perferendis rerum tempora perspiciatis illum hic. Amet esse nostrum, nihil maiores earum itaque?</p>
+            </div> <!--end .sidebar-right-->
+        </div> <!--end .content-->
+
+        <div class="footer">
+            <h3>Phan chan cua website</h3>
+            <p>Copyright thuoc ve W3School 2020</p>
+        </div> <!--end .sitewrap-->
+           
+    </div>
+    <!--end .sitewrap-->
+
+    
+</body>
+</html>
